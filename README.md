@@ -11,18 +11,17 @@ To implement a curved design that mimics the above design header one would need 
 
 In addition, it would take time to produce the desired output since the curves go each way (meaning that on one half there is mostly header and on the other mostly white space).  But it is very doable with a moderate amount of effort.
 
-
 ### Are there other options for similar result with less work?
 
-Another option to replicate the above output header is to format the image in a photo editing software first (e.g. PhotoShop or GIMP) with the curved design.  That formatted image could then be loaded into the website to replace the rectangular image that was used previously.  Depending on your experience with photo editing this might be a much faster approach to implement the design.  If you have not used GIMP or PhotoShop extensively then the svg approach would likely be easier.
+Another option to replicate the above output header is to format the image in a photo editing software first (e.g. Photoshop or GIMP) with the curved design.  That formatted image could then be loaded into the website to replace the rectangular image that was used previously.  Depending on your experience with photo editing this might be a much faster approach to implement the design.  If you have not used GIMP or Photoshop extensively then the svg approach would likely be easier.
 
 ### Is it a good development choice? Do you have any concerns with it?
 
-I think it is a good design choice, it does not hinder the users ability to navigate the site and it is a catchy design which gives it visual appeal.  The only issue I could see with the design is that it adds a lot of unused white space to the page but that seems to a minor issue.
+I think it is a good design choice, it does not hinder the user’s ability to navigate the site and it is a catchy design which gives it visual appeal.  The only issue I could see with the design is that it adds a lot of unused white space to the page but that seems to a minor issue.
 
 ### What would be the first dev step you would try when building? Ex: “Add border radius to curve the edges” or “Something with SVGs”. This doesn't have to be terribly specific, just do your best. 
 
-1. Setup an svg tag in html to hold the header image.
+1. Setup a svg tag in html to hold the header image.
 2. add the picture as the background image to the svg portion of the page.
 3. add the inverse of a white circle to the left side of the page and a white circle to the right to block out the desired portions of the header.
 4. refine the svg graphics until you are happy with the look of the header.
@@ -62,7 +61,7 @@ Don't miss the note from designer in Design3.
 
 ### Will it take a little, lot, or absurd amount of work to build this feature/design?
 
-This is something that would take a lot of work to implement and requires the use of JavaScript, see the second answer on Stack Overflow (https://stackoverflow.com/questions/12381563/how-to-stop-browser-back-button-using-javascript) a working example of which can be found here: (http://output.jsbin.com/yaqaho#!).  However this is attempting to override the default behavior of the browser and as a result may not work in future releases of web browsers or it may work in some but not others.  From testing the live output the implementation works as requested.  The user is unable to go back with the back button and the contents of the page are not lost when they click back.
+This is something that would take a lot of work to implement and requires the use of JavaScript, see the second answer on Stack Overflow (https://stackoverflow.com/questions/12381563/how-to-stop-browser-back-button-using-javascript) a working example of which can be found here: (http://output.jsbin.com/yaqaho#!).  However, this is attempting to override the default behavior of the browser and as a result may not work in future releases of web browsers or it may work in some but not others.  From testing the live output, the implementation works as requested.  The user is unable to go back with the back button and the contents of the page are not lost when they click back.
 
 The above implementation should allow the user to navigate forward and back with the form buttons as the code should not impact that part of the page.
 
@@ -72,9 +71,9 @@ The other option that is much easier to implement is the first answer in the abo
 
 ### Is it a good development choice? Do you have any concerns with it?
 
-No disabling the back button is poor choice because the page is attempting to circumvent the browser design and implement a page design that is foreign to the user. The user expects the back button to work as intended and if it does not they will be come frustrated and confused.  Confusion is the last thing you want when someone is filling out your web form.  
+No disabling the back button is poor choice because the page is attempting to circumvent the browser design and implement a page design that is foreign to the user. The user expects the back button to work as intended and if it does not they will become frustrated and confused.  Confusion is the last thing you want when someone is filling out your web form.  
 
-For that reason the better approach is to instead of disabling the back button is to add a warning message that informs the user of what will happen if they click back.  This is the approach used by webpages that do not want users clicking the back arrow.
+For that reason, the better approach is to instead of disabling the back button is to add a warning message that informs the user of what will happen if they click back.  This is the approach used by webpages that do not want users clicking the back arrow.
 
 ### What would be the first dev step you would try when building? Ex: “Add border radius to curve the edges” or “Something with SVGs”. This doesn't have to be terribly specific, just do your best. 
 
